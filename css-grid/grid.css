@@ -1,0 +1,25 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: hotpink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 100px;
+}
+header{
+    background-color: black;
+    grid-column: 1/-1;
+}
+aside{
+    background-color: blue;
+}
+section{
+    background-color: greenyellow;
+    grid-column: 2/-1;
+}
+footer{
+    background-color: grey;
+    grid-column: 1/-1;
+}
