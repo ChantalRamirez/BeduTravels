@@ -1,0 +1,48 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: black;
+    height: 50px;
+}
+aside{
+    background-color: blue;
+    width: 300px;
+}
+section{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+
+}
+footer{
+    background-color: grey;
+    height: 100px;;
+}
+
+.main{
+    flex: 1;
+    display: flex;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+    border-radius: 50% 50% 50% 50%;
+   
+}
+
+.red{
+    background-color: sienna;
+    order: 1;
+}
