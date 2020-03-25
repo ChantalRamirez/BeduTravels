@@ -1,0 +1,25 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/fc/fd/5e/fcfd5e7ba64971a9862606a3e06ed31a.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+}
+
+.jumbotron{
+    background-color: transparent;
+    color: white;
+}
+.iconos {
+    text-align: center;
+    background-color: white;
+    padding:
+  }
+  
+  .iconos img {
+    width: 50px;
+    display: inline-block;
+  }
