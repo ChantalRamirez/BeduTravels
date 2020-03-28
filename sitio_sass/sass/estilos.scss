@@ -1,0 +1,11 @@
+@import "variables";
+
+h1{
+    color: $coloruno;
+}
+footer{
+    background: $colordos;
+    h4 {
+        color: $colortres;
+    }
+}

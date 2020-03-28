@@ -1,3 +1,14 @@
+$verde: green;
+$fullsize: 100%;
+$navbackground: rgb(95, 16, 16);
+
+@import "navbar";
+
+@mixin centertexto($align: center) {
+    text-align: $align;
+}
+
+
 html{
     height: 100%;
 }
@@ -22,24 +33,7 @@ article.verde {
     overflow: hidden;
 }
 
-nav{
-    background-color: #24272a;
-    min-height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav>div>a{
-    color: #fff;
-    text-decoration: none;
-    padding-right: 20px;
-}
-
-nav>div>a:hover{
-    color: green;
-}
 
 #bedu-logo {
     margin-left: 20px;
@@ -56,16 +50,17 @@ nav>div>a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: 100%;
-    align-items: center;
+    height: $fullsize;
+    @include centertexto();
     flex-direction: column;
     justify-content: center;    
 }
 
 .main-section>div{
-    text-align: center;
+    @include centertexto();
     width: 100%;
 }
+
 input {
     border: 1px solid purple;
     padding: 6px 12px;
