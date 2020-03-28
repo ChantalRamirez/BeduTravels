@@ -1,0 +1,30 @@
+.boton{
+    color: white;
+    width: 100%;
+    background-color: white;
+    &:hover{
+        color: white;
+    }
+}
+
+@mixin btnBackground($color){
+    background-color: $color;
+    &:hover {
+        background-color: lighten($color, 10%);
+    }
+}
+
+.logo>svg{
+    width:100px;
+    fill: white;
+}
+
+.btn-entrar{
+    @extend .boton;
+    @include btnBackground(purple);
+}
+
+.btn-cancelar{ 
+    @extend .boton;
+    @include btnBackground(green);
+}

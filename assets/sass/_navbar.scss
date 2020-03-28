@@ -1,0 +1,16 @@
+nav{
+    background-color: $navbackground;
+    min-height: 50px;
+    width: $fullsize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div a{
+        color: #fff;
+        text-decoration: none;
+        padding-right: 20px;
+        &:hover{
+            color: lighten($verde, 70%);
+        }
+    }
+}
