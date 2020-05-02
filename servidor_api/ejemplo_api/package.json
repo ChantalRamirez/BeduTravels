@@ -1,0 +1,26 @@
+{
+  "name": "ejemplo-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && node dist/bin/www",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "@babel/polyfill": "^7.4.4",
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "rimraf": "^3.0.0"
+  }
+}
